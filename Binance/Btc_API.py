@@ -10,7 +10,7 @@ api_secret = ("Your API SECRET")
 def all_time_prices():
     #All Datas of Bitcoin
     client = Client(api_key, api_secret)
-    candlesticks = client.get_historical_klines("BTCUSDT", Client.KLINE_INTERVAL_1DAY, "1 Jan, 2021", "now")
+    candlesticks = client.get_historical_klines("BTCUSDT", Client.KLINE_INTERVAL_1DAY, "1 Jan, 2022", "now")
     candles = candlesticks
 
     with open('BTCUSDT.csv', 'w', newline='') as csvfile:
