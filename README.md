@@ -1,6 +1,6 @@
 Hello!
  
-In this project, I tried to estimate Bitcoin prices in the future. I used python-binance v1.0.15 and This is an unofficial Python wrapper for the Binance exchange REST API v3. You can read more via this link: https://python-binance.readthedocs.io/en/latest/
+In this project, I tried to estimate future price of Bitcoin. I used python-binance v1.0.15 and This is an unofficial Python wrapper for the Binance exchange REST API v3. You can read more via this link: https://python-binance.readthedocs.io/en/latest/
 
 When I started to project, I needed to API key and API secret of my binance account for web scraping.
 
