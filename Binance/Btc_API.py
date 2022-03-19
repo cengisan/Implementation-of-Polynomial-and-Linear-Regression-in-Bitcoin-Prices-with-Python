@@ -4,6 +4,9 @@ import csv
 from numpy import genfromtxt
 from matplotlib import pyplot as plt
 import numpy as np
+from sklearn.linear_model import LinearRegression
+from sklearn.preprocessing import PolynomialFeatures
+
 api_key = ("Your API KEY")
 api_secret = ("Your API SECRET")
 
@@ -40,11 +43,11 @@ def ai_estimation_graph():
     X = np.array(j).reshape(-1, 1)
     y = np.array(genfromtxt('BTCUSDT.csv')).reshape(-1, 1)
     #Fitting Linear Regression to the dataset
-    from sklearn.linear_model import LinearRegression
+    
     lin = LinearRegression()
     lin.fit(X, y)
     # Fitting Polynomial Regression to the dataset
-    from sklearn.preprocessing import PolynomialFeatures
+    
     poly = PolynomialFeatures(degree=4)
     X_poly = poly.fit_transform(X)
     lin2 = LinearRegression()
